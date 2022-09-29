@@ -1,12 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>E-Commerce</h1>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">E-Commerce</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+    <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide orange-bg" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row align-items-center">
+                        <div class="col-md-7">
+                            <h1>Mi LED TV 4A PRO 32</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae molestias illo velit
+                                voluptate. Pariatur inventore voluptatum, officiis facilis iste odit, vero nihil
+                                doloribus possimus accusantium minus debitis in? Sed, doloremque.</p>
+                            <h1 class="price">$700</h1>
+                            <button class="buy-now-button">Buy Now</button>
+                        </div>
+                        <div class="col-md-5">
+                            <img src="images/TV.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="carousel-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-7">
+                            <h1>Best Gamming Headphone</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae molestias illo velit
+                                voluptate. Pariatur inventore voluptatum, officiis facilis iste odit, vero nihil
+                                doloribus possimus accusantium minus debitis in? Sed, doloremque.</p>
+                            <h1 class="price">$120</h1>
+                            <button class="buy-now-button">Buy Now</button>
+                        </div>
+                        <div class="col-md-5">
+                            <img src="images/headphone.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="carousel-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-7">
+                            <h1>iPhone 14 Pro Max</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae molestias illo velit
+                                voluptate. Pariatur inventore voluptatum, officiis facilis iste odit, vero nihil
+                                doloribus possimus accusantium minus debitis in? Sed, doloremque.</p>
+                            <h1 class="price">$1099</h1>
+                            <button class="buy-now-button">Buy Now</button>
+                        </div>
+                        <div class="col-md-5">
+                            <img src="images/iPhone-14-Pro.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container categories">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="d-flex justify-content-between align-items-center cat1">
+                    <h1>T-Shirt</h1>
+                    <img src="images/t-shirt3.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="d-flex justify-content-between align-items-center cat2">
+                    <h1>Girl Dress</h1>
+                    <img src="images/dress4.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="d-flex justify-content-between align-items-center cat3">
+                    <h1>Shoes</h1>
+                    <img src="images/shoes2.webp" alt="">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="d-flex justify-content-between align-items-center cat4">
+                    <h1>Backpack</h1>
+                    <img src="images/bag6.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container shoes" id="shoes">
+        <h3>Shoes</h3>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/shoes3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                      <h5>$120</h5>
+                      <button class="buy-now-button">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/shoes5.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.  This content is a little bit longer.</p>
+                         <h5>$220</h5>
+                         <button class="buy-now-button">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/shoes4.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                            <h5>$220</h5>
+                            <button class="buy-now-button">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container t-shirt" id="t-shirt">
+        <h5>T-Shirt</h5>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/t-shirt1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                      <h5>$120</h5>
+                      <button class="buy-now-button">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/t-shirt5.webp " class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.  This content is a little bit longer.</p>
+                         <h5>$220</h5>
+                         <button class="buy-now-button">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/t-shirt4.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                            <h5>$220</h5>
+                            <button class="buy-now-button">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container girls-dress" id="girls-dress">
+        <h5>Girls Dress</h5>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/dress1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                      <h5>$120</h5>
+                      <button class="buy-now-button">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/dress2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.  This content is a little bit longer.</p>
+                         <h5>$220</h5>
+                         <button class="buy-now-button">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/dress3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                            <h5>$220</h5>
+                            <button class="buy-now-button">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container backpack" id="backpack">
+        <h5>Backpack</h5>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/bag1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                      <h5>$120</h5>
+                      <button class="buy-now-button">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/bag3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.  This content is a little bit longer.</p>
+                         <h5>$220</h5>
+                         <button class="buy-now-button">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/bag5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                            <h5>$220</h5>
+                            <button class="buy-now-button">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+       <div class="container align-items-center d-flex justify-content-center orange-bg" id="subscribe">
+        <div>
+            <h3>LET'S STAY IN TOUCH</h3>
+            <h6>Get updates on sales, specials and more</h6>
+            <input class="form-control" type="text">
+            <button class="buy-now-button">SUBMIT</button>
+        </div>
+       </div>
+
+       <footer class="footer">
+        <small>	&#169;E-Comerce. All rights rederved.</small>
+       </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
